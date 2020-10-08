@@ -12,12 +12,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::where('email', 'admin@admin.com')->first();
+        $user = User::where('email', 'backend@backend.com')->first();
         if (is_null($user)){
 
             $user = new User();
             $user->name = "Admin";
-            $user->email = "admin@admin.com";
+            $user->email = "backend@backend.com";
             $user->password = \Illuminate\Support\Facades\Hash::make('password');
             $user->save();
 

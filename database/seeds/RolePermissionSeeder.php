@@ -15,7 +15,7 @@ class RolePermissionSeeder extends Seeder
     {
         // Create Roles
         $roleSuperAdmin = Role::create(['name' => 'superadmin']);
-        $roleAdmin = Role::create(['name' => 'admin']);
+        $roleAdmin = Role::create(['name' => 'backend']);
         $roleEditor = Role::create(['name' => 'editor']);
         $roleUser = Role::create(['name' => 'user']);
 
@@ -34,11 +34,11 @@ class RolePermissionSeeder extends Seeder
            'blog.approve',
 
            // Admin Permissions
-           'admin.create',
-           'admin.view',
-           'admin.edit',
-           'admin.delete',
-           'admin.approve',
+           'backend.create',
+           'backend.view',
+           'backend.edit',
+           'backend.delete',
+           'backend.approve',
 
            // Role Permissions
            'role.create',
